@@ -1,0 +1,259 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-style: solid;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Establecer transición global para todos los elementos */
+* {
+    transition: all 3s ease !important; /* Ajusta la duración y la función de temporización según tus preferencias */
+  }
+  
+  /* Resto de tu código ... */
+  
+
+
+.chapterSpines{
+    display: flex;
+    flex-direction: row;
+    animation-duration: 0ms;
+    transition:  15s ease !important;
+}
+.images1{
+    background: url('assets/img/build.jpeg') no-repeat center center fixed;
+}
+.images2{
+    background: url('assets/img/build1.jpeg') no-repeat center center fixed;
+}
+.images3{
+    background: url('assets/img/build2.jpeg') no-repeat center center fixed;
+}
+.images4{
+    background: url('assets/img/build.jpeg') no-repeat center center fixed;
+}
+
+.images1, .images2, .images3, .images5{
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapterSpines__images{
+    border: solid 1px rgb(77, 205, 170);
+}
+.chapterSpines__images:hover{
+    background-color: rgb(78, 96, 41);
+}
+  
+.chapterSpines__images {
+    flex: 1;
+    height: 600px;
+    overflow: hidden;
+}
+  
+.chapterSpines__images:hover {
+    flex: 5; /* Ajusta este valor según sea necesario */
+}
+  
+.chapterSpines__images div {
+    width: 100%;
+    height: 100%;
+}
+  
+  @media (max-width: 768px) {
+    .chapterSpines {
+      flex-direction: column;
+    }
+  }
+
+  .chapterSpines {
+  display: flex;
+}
+
+.chapterSpines__images {
+  flex: 1;
+  height: 600px;
+  overflow: hidden;
+  transition: flex 0.5s;
+  position: relative;
+}
+
+.chapterSpines__content {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.046); /* Fondo semi-transparente para el contenido */
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  transition: background 9s ease; 
+
+}
+
+/* Otro */
+.chapterSpines__images:hover {
+  flex:4;   /* Cantidad de espacios alcanzado al realizar hover*/
+}
+
+.chapterSpines__images:hover .chapterSpines__content {
+  opacity: 1;
+}
+
+.chapterSpines__images div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.chapterSpines__title {
+  color: rgb(41, 26, 26);
+  font-size: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  padding: 160px 0px;
+}
+
+.chapterSpines__button {
+  background-color: #621414; /* Cambia esto a tu color de botón deseado */
+  width: 60px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 3s;
+  padding: 10px 0px;
+  filter: blur(10px); /* Aplicar un desenfoque inicial */
+  opacity: 0; /* Inicialmente oculto */
+  transition: filter 0.5s ease, opacity 0.5s ease;
+  
+}
+
+
+.chapterSpines__icon {
+  display: inline-block;
+  margin-right: 5px;
+  transition: filter 0.3s;
+}
+
+.chapterSpines__images:hover .chapterSpines__icon {
+  filter: blur(0);
+}
+
+/* OTros x2 */
+
+.chapterSpines__content {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el contenido */
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: flex-end; /* Coloca los elementos al final verticalmente */
+  }
+  
+  .chapterSpines__title {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  
+
+  
+  .chapterSpines__icon {
+    display: inline-block;
+    margin-right: 5px;
+    transition: filter 0.3s;
+}
