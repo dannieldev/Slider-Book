@@ -91,7 +91,7 @@ video {
 
 /* Establecer transición global para todos los elementos */
 * {
-    transition: all 3s ease !important; /* Ajusta la duración y la función de temporización según tus preferencias */
+    transition: all 1s ease !important; /* Ajusta la duración y la función de temporización según tus preferencias */
   }
   
   /* Resto de tu código ... */
